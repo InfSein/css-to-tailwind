@@ -15,7 +15,7 @@ const ePreventDefault = (e: KeyboardEvent) => {
 }
 
 const demoArray = getDemoArray(
-  'body {\nwidth: 100%;\ndisplay: flex;\n}'
+  'body {\nwidth: 100%;\ndisplay: flex;\n'
 )
 
 export default function Home() {
