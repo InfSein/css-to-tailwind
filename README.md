@@ -1,5 +1,13 @@
 # CSS To Tailwind
 
+This is a fork version of [Origin Repo](https://github.com/hymhub/css-to-tailwind) .
+
+## Changes
+
+- Demo code of online page is much shorter.
+
+---
+
 Convert CSS code to Tailwindcss syntax in real time
 
 convert online: [https://hymhub.github.io/css-to-tailwind](https://hymhub.github.io/css-to-tailwind)
@@ -19,18 +27,18 @@ npm i css-to-tailwind-translator
 ### Usage
 
 ```js
-import { CssToTailwindTranslator } from "css-to-tailwind-translator";
+import { CssToTailwindTranslator } from 'css-to-tailwind-translator'
 
 const cssCode = `body {
   width: 100%;
   height: 50%;
   margin: 0 !important;
   background-color: transparent;
-}`;
+}`
 
-const conversionResult = CssToTailwindTranslator(cssCode);
+const conversionResult = CssToTailwindTranslator(cssCode)
 
-console.log(conversionResult);
+console.log(conversionResult)
 // {
 //   code: 'OK',
 //   data: [
@@ -57,30 +65,29 @@ console.log(conversionResult);
 ### `CustomTheme`
 
 ```typescript
-export interface CustomTheme
-  extends Record<string, undefined | Record<string, string>> {
-  media?: Record<string, string>;
-  "backdrop-blur"?: Record<string, string>;
-  "backdrop-brightness"?: Record<string, string>;
-  "backdrop-contrast"?: Record<string, string>;
-  "backdrop-grayscale"?: Record<string, string>;
-  "backdrop-hue-rotate"?: Record<string, string>;
-  "backdrop-invert"?: Record<string, string>;
-  "backdrop-opacity"?: Record<string, string>;
-  "backdrop-saturate"?: Record<string, string>;
-  "backdrop-sepia"?: Record<string, string>;
-  blur?: Record<string, string>;
-  brightness?: Record<string, string>;
-  contrast?: Record<string, string>;
-  grayscale?: Record<string, string>;
-  "hue-rotate"?: Record<string, string>;
-  invert?: Record<string, string>;
-  saturate?: Record<string, string>;
-  sepia?: Record<string, string>;
-  scale?: Record<string, string>;
-  rotate?: Record<string, string>;
-  translate?: Record<string, string>;
-  skew?: Record<string, string>;
+export interface CustomTheme extends Record<string, undefined | Record<string, string>> {
+  media?: Record<string, string>
+  'backdrop-blur'?: Record<string, string>
+  'backdrop-brightness'?: Record<string, string>
+  'backdrop-contrast'?: Record<string, string>
+  'backdrop-grayscale'?: Record<string, string>
+  'backdrop-hue-rotate'?: Record<string, string>
+  'backdrop-invert'?: Record<string, string>
+  'backdrop-opacity'?: Record<string, string>
+  'backdrop-saturate'?: Record<string, string>
+  'backdrop-sepia'?: Record<string, string>
+  blur?: Record<string, string>
+  brightness?: Record<string, string>
+  contrast?: Record<string, string>
+  grayscale?: Record<string, string>
+  'hue-rotate'?: Record<string, string>
+  invert?: Record<string, string>
+  saturate?: Record<string, string>
+  sepia?: Record<string, string>
+  scale?: Record<string, string>
+  rotate?: Record<string, string>
+  translate?: Record<string, string>
+  skew?: Record<string, string>
   // custom more...
 }
 ```
